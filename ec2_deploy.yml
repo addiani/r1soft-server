@@ -1,0 +1,14 @@
+---
+- name: Create ec2 instances
+  hosts: localhost
+  tasks: 
+    - name: Create R1soft Server
+      ec2: 
+        key_name: "ansible"
+        assign_public_ip: yes
+        instance_type: "t2.micro"
+        region: "us-east-2"
+        image: "ami-0de7daa7385332688"
+        vpc_subnet_id: "subnet-972c4fed"
+
+
