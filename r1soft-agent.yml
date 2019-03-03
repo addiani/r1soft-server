@@ -32,6 +32,6 @@
 
 
     - name: Get key
-      shell: "r1soft-setup --get-key http://18.191.8.30:8080"
+      shell: "r1soft-setup --get-key http://18.218.109.78:8080"
       ignore_errors: true
 
